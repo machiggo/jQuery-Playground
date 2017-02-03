@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>05_lagerbestand_json.html</title>
+	<style>
+		input {
+			display:block;
+		}
+	</style>
+	<script src="../../_lib/js/lib.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../../_lib/js/jquery-1.12.4.min.js"><\/script>');</script>
+	<script src="05_lagerbestand.js"></script>
+	<!-- <script src="05_lagerbestand2.js"></script> -->
+</head>
+<body>
+	<form name="abfrage">
+	    <h2>Daten eines Artikels abfragen</h2><br>
+	    <label>Artikelbezeichnung: </label><input type="text" name="artbez" size="13">
+	    <label>Bestand: </label> <input type="text" name="bestand" readonly size="6">    
+	    <label>Preis: </label>   <input type="text" name="preis" readonly size="10">    
+	    <label>Absatz: </label>   <input type="text" name="absatz" readonly size="6">
+		<input type="button" value="Daten anzeigen">		
+	</form>
+	<h2>Artikel:</h2>
+	<div id="ausgabe"></div>
+	<noscript>
+		<img src="../../_lib/img/noscript.png" alt="Um den Funktionsumfang der Seite nutzen zu können, aktivieren Sie bitte JavaScript." title="JavaScript noscript">
+	</noscript>
+</body>
+</html>

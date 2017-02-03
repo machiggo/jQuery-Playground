@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="UTF-8">
+	<title>Eventhandling</title>
+	<link rel="stylesheet" href="04_zusammenfassung.css">
+	<script src="../../_lib/js/lib.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../../_lib/js/jquery-1.12.4.min.js"><\/script>');</script>
+	<script src="04_zusammenfassung.js"></script>	
+</head>
+<body>
+	<h1>Übungen</h1>
+    <div id="einstieg">
+        <h2>1. Eigenschaften und Attribute auslesen</h2>
+        <ul>
+            <li><a id="link-01" href="https://www.google.de">Seite1</a></li>
+            <li><a id="link-02" href="#">Seite2</a></li>
+            <li><a id="link-03" href="#">Seite3</a></li>
+            <li><a id="link-04" href="#">Seite4</a></li>
+        </ul>
+        <div id="ausgabe">Beispielausgabe:<br>
+            Die id des geklickten links <b>link-01</b>.<br>
+            Die Zahl <b>01</b><br>
+            Der Textknoten: <b>Seite1</b><br>
+            Er wurde durch jQuery mit der Klasse <b>marked</b> versehen.
+        </div>
+        <!--
+        Aufgabe 1:
+        Wenn das DOM geladen wurde, soll zuerst der Inhalt des divs#ausgabe gelöscht werden.
+
+        Wird einer der Hyperlinks geklickt muss dem geklickten Link die Klasse "marked" zugewiesen werden.
+        Es kann/darf immer nur ein link die Klasse marked enthalten.
+
+        Lesen Sie die Daten die Sie in der Beispielausgabe sehen können aus und schreiben Sie die Information
+        für den aktuell geklickten Link in den div-ausgabe.
+
+        Alle Fett markierten Bereiche in der Beispielausgabe sollen beim Klicken auf den Link ausgelesen werden.
+        Die id des geklickten links <b>link-01</b>.<br>
+        Die Zahl <b>01</b><br>
+        Der Textknoten: <b>Seite1</b><br>
+        Er wurde durch jQuery mit der Klasse <b>marked</b> versehen.
+        -->
+    </div>
+
+    <div id="dom">
+        <h2>2. Geburtstagsliste</h2>
+        <h3>Person eintragen:</h3>
+        <div id="fehler"></div>
+        <form action="#" method="get">
+            <label for="vorname"><b>Vorname</b></label>
+            <input type="text" id="vorname" name="vorname" placeholder="Max">
+            <label for="nachname"><b>Nachname</b></label>
+            <input type="text" id="nachname" name="nachname" placeholder="Mustermann">
+            <label for="geburtstag"><b>Geburtstag</b></label>
+            <input type="text" id="geburtstag" name="geburtstag" placeholder="29.02.1980">
+            <input type="submit" id="eintragen" value="Eintrag hinzufügen">
+        </form>
+        <h3>Ausgabe der Geburtstage:</h3>
+        <ul id="liste">
+            <li>Max Mustermann 29.02.1980</li>
+        </ul>
+        <!--
+        Aufgabe 2:
+        Geburtstagsliste
+        Immer wenn das input#eintragen gedrückt wird  sollen die Felder #vorname, #nachname und #geburtstag
+        validiert werden:
+
+        Sollte ein Feld leer sein schreiben Sie folgende Fehlermeldung in den div#fehler:
+        Vorname ist leer Fehlermeldung: Vorname darf nicht leer sein.
+        Nachname ist leer Fehlermeldung:  Nachname darf nicht leer sein.
+        Geburtstag ist leer  Fehlermeldung:  Geburtstag darf nicht leer sein.
+
+        Wurden alle Felder ausgefüllt schreiben Sie die eingegebenen Daten als neues Listenelemente in die Liste.
+        (Siehe Beispiel)
+        -->
+    </div>
+
+
+    <div id="bilder">
+        <h2>3. Bildwechsler</h2>
+        <img src="../../_lib/img/kugeln/kugel_1_v1.png" alt="lorempixel bild1" width="200" height="200">
+        <!--
+          Aufgabe 3:
+          a) Wird die Seite neu geladen soll ein zufälliges Bild aus folgender Liste im Dokument
+          angezeigt werden.
+          b) Binden Sie ein mousveover an das img-Element. Immer wenn das Event ausgelöst wird
+          soll das Bild zufällig ausgetauscht werden.
+          https://api.jquery.com/mouseover/
+
+          Bildwechsler
+          kugeln/kugel_1_v1.png
+		  ...
+		  kugeln/kugel_49_v1.png
+       -->
+    </div>
+
+
+    <div id="links">
+        <!--
+        Aufgabe 4:
+        Unterbinden Sie das Standardverhalten der Hyperlinks.
+        Anstatt das Bild im Browser zu öffnen sorgen Sie dafür, das
+        dass Bild im div#bilder ausgetauscht wird.
+        -->
+        <h2>4. Hyperlinks Eventhandling</h2>
+        <ul>
+            <li><a id="bild-1" href="../../_lib/img/kugeln/kugel_1_v1.png">Bild1</a></li>
+            <li><a id="bild-2" href="../../_lib/img/kugeln/kugel_2_v1.png">Bild2</a></li>
+            <li><a id="bild-3" href="../../_lib/img/kugeln/kugel_3_v1.png">Bild3</a></li>
+            <li><a id="bild-4" href="../../_lib/img/kugeln/kugel_4_v1.png">Bild4</a></li>
+            <li><a id="bild-5" href="../../_lib/img/kugeln/kugel_5_v1.png">Bild5</a></li>
+            <li><a id="bild-6" href="../../_lib/img/kugeln/kugel_6_v1.png">Bild6</a></li>
+        </ul>
+    </div>
+</body>
+</html>

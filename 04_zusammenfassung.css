@@ -1,0 +1,33 @@
+body {
+	width:600px;
+	margin-left:auto;
+	margin-right:auto;
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
+
+}
+
+#dom, #bilder, #links, #einstieg {
+	border-bottom: 1px solid #10007B;
+	margin:20px 0;
+}
+
+label, input {
+	display:block;
+	margin: 10px 0;
+}
+
+#liste li {
+	list-style-type:none;
+}
+
+#bilder img {
+	/*width:100%;*/
+
+}
+.marked {
+	color:#bf0000;
+}
+
+.error{
+	color:red;
+}

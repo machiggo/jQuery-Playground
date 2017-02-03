@@ -1,0 +1,46 @@
+{
+   "Lager": {
+      "Artikel": [
+         {
+            "Bezeichnung": "Jalousie Cxs",
+            "Bestand": "100",
+            "Preis": "198",
+            "Absatz": "120",
+            "_nr": "7777",
+            "_wg": "Jalou"
+         },
+         {
+            "Bezeichnung": "Jalousie Cxx",
+            "Bestand": "200",
+            "Preis": "174",
+            "Absatz": "330",
+            "_nr": "7778",
+            "_wg": "Jalou"
+         },
+         {
+            "Bezeichnung": "Rollo PCx",
+            "Bestand": "150",
+            "Preis": "95",
+            "Absatz": "200",
+            "_nr": "5554",
+            "_wg": "Rollo"
+         },
+         {
+            "Bezeichnung": "Sunset",
+            "Bestand": "200",
+            "Preis": "120",
+            "Absatz": "200",
+            "_nr": "7999",
+            "_wg": "Rollo"
+         },
+         {
+            "Bezeichnung": "Markise Blue Sk",
+            "Bestand": "160",
+            "Preis": "287,5",
+            "Absatz": "80",
+            "_nr": "8444",
+            "_wg": "MK"
+         }
+      ]
+   }
+}
