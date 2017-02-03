@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Unbenanntes Dokument</title>
+         <script src="jquery-3.1.1.min.js"></script>
+		<style rel="text/css">
+			#kreis{background-color:green;width:150px;height:150px;margin:10px; border-radius:75px;}
+			.viereck, .viereck1{background-color:red;width:150px;height:150px;margin:10px;}        	
+			iframe {border:3px solid black;}
+        </style>
+    </head>
+
+	<body>
+    	<div id="kreis"></div>
+        <div class="viereck" id="viereck"></div>
+        <div class="viereck1" id="viereck1"></div>
+    	<p> Die ist ein p-Tag</p>
+        
+        <iframe src="http://www.talentCareers.com"> </iframe>
+        
+		<script type="text/javascript">
+        	/* if(typeof jQuery == "undefined"){
+			alert("jQuery wurde nicht installiert");	
+			} else {
+			alert ("jQuery wurde erfolgreich installiert");	
+			}
+			*/
+			
+			/* $("#kreis").hover(function() {
+				alert($("p").html());;
+				});
+        	
+			$(".viereck").click(function() {
+				alert("Das Viereck wurde angeklick");
+				});	
+				
+			$("div").click(function() {
+				alert("Das Div wurde angeklick");
+				});	
+			*/ 	
+/*			$("#kreis").click(function() {
+				$("#kreis").css("width", "400px");
+				$("#kreis").css("background-color", "red");
+			});
+			
+			$(".viereck").click(function() {
+				$(this).css("display", "none");
+        });
+		
+		$("div").click(function() {
+			alert("Du hast folgendes angeklickt: " + $(this).attr("id"))
+			});
+*/
+		$("div").click(function() {
+			if ($(this).attr("id") == "kreis"){ 
+				alert ("den Kreis du gewählt hast");
+			} else { 
+				alert("das Viereck du gewählt hast");
+			}
+		});
+        </script>    
+	</body>
+</html>
+

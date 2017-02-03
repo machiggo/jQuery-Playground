@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Unbenanntes Dokument</title>
+         <script src="jquery-3.1.1.min.js"></script>
+		<style rel="text/css">
+			#kreis{width:150px;height:150px;border-radius:50%;background-color:green;}
+        </style>
+    </head>
+
+	<body>
+    
+    	<p id="text"> Die ist ein p-Tag</p>
+        <button id="toggle">Text toggeln</button>
+        <div id="kreis"></div>
+		<script type="text/javascript">
+        	var textAktiv = true;
+			$("#kreis").click (function() {$(this).html("Klick mich")})
+			$("#kreis").innerHTML = "Klick mich";
+//			document.getElementById("kreis").innerHTML = "<p>Klick mich</p>";
+			console.log(textAktiv)
+			$("#toggle").click (function() {
+			
+				if (textAktiv){
+					$("#text").fadeOut(2500, function() {
+						textAktiv = false; console.log(textAktiv)
+							});
+							
+				} else {
+					$("#text").fadeIn(2500, function() {
+						textAktiv = true; console.log(textAktiv)
+							});
+						};
+							})
+			
+			
+			$("#kreis").click(function (){
+				$(this).animate({
+					width: "550px",
+					height: "550px",
+					margin: "100px",
+				},2000, function() {
+					$(this).css("backgroundColor", "red");
+					});
+				});
+				
+			
+			
+			
+			var kreis = true
+				for (kreis in window) {
+				$("#kreis").fadeOut(1500)
+				}
+				
+			var kreis = false
+				for (kreis in window) {
+					$("#kreis").fadeIn(1500)
+					} 
+	//			else {$("#kreis").fadeIn(1500)}
+			
+			
+	/*		$("#kreis").click(function () {
+				$(this).animate({
+					height:"500px",
+					width:"500px",
+					margin:"100px",
+					},2000);
+					});
+			
+			$("#kreis").click(function() {
+				$(this).css("backgroundColor","red") 
+				})
+
+		*/	
+			
+			
+        </script>    
+	</body>
+</html>
+

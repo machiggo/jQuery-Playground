@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RegEx - regular Expression</title>
+         <script src="jquery-3.1.1.min.js"></script>
+		<style rel="text/css">
+			#kreis{width:150px;height:150px;border-radius:50%;background-color:green;}
+			
+			body {font-size:150%; 
+				font-family:helvetica, sans-serif;}
+			
+			
+			
+			label {
+				position:relative;
+				top:25px;
+				padding-right:15px;
+				width:150px;
+				float:left;
+				margin-top:15px;
+				}
+			
+			input { padding: 5px 5px 10px 5px;
+					margin-top:5px;
+					font-size:25px;
+					border: 1px solid grey;
+					border-radius: 5px;
+					width:320px;
+					position:relative;
+					top:25px;
+					
+					}
+			
+			#wrapper {width:500px;
+					margin:0 auto;}
+			
+			#fehler {color:red; margin:0 auto}
+			
+			#richtig {color:green}
+			
+        </style>
+    </head>
+
+	<body>
+    
+    	<p id="text"> Die ist ein p-Tag</p>
+        <button id="toggle">Text toggeln</button>
+        <div id="kreis"></div>
+		
+		
+		<div id="wrapper">
+			
+				<label for=email>E-Mail</label>
+				<input type="email" name="email" id="email" placeholder="hans@email.com"></input>
+			
+				<label for=tel>Telefonnummer</label>
+				<input type="number" name="tel" id="tel" placeholder="0049+123+456789"></input>
+				
+				<label for=passwort>Passwort</label>
+				<input type="password" name="email" id="passwort1" placeholder="passwort"></input>
+				<label for=passwort>Passwort</label>
+				<input type="password" name="email" id="passwort2" placeholder="passwort wiederholen"></input>
+		
+				<input type="submit" id="submitButton" value="registrieren">
+		</div>
+		
+		<div id="fehler"> </div>
+		<div id="richtig"> </div>
+		
+		
+		
+		<script type="text/javascript">
+		
+		
+		/*
+		$("#submitButton").click(function() {
+		
+		var fehler = "" 
+		 function validateEmail($email) {
+			var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+			return emailReg.test( $email );
+			}
+		
+				if (validateEmail($("#email").val() ) == false) {
+		//		console.log("bis hier her kommt er")
+				fehler += "<p>ungültige E-Mail</p>"
+		//		alert("<p>ungültige E-Mail</p>")
+				}
+				
+				
+				if (isNaN($("#tel") ) == false) {
+	//			console.log("checkt die Telefonnummer")
+				fehler += "<p>ungültige Telefonnummer</p>"
+	//			alert("<p>ungültige Telefonnummer</p>")
+	//			console.log("falsche Telnummer")
+				}
+				
+				if ( ($("#tel").val().toString().length) < 4 ) {
+	//			console.log("checkt die Telefonnummer")
+				fehler += "<p>Telefonnummer ist zu kurz</p>"
+	//			alert("<p>Die Telefonnummer ist zu kurz</p>")
+	//			console.log("Die Telefonnummer ist zu kurz")
+				}
+				
+				if ( ($("#passwort1").val() ) != ($("#passwort2").val() ) ) {
+	//			console.log("checkt die Telefonnummer")
+				fehler += "<p>Passwörter stimmen nicht überein </p>"
+	//			alert("<p>Passwörter stimmen überein </p>")
+				console.log("Passwörter stimmen nicht überein ")
+				}
+				
+				$("#fehler").html(fehler)
+				$("#richtig").html("<p></p>")
+				
+				if (fehler == "") {
+					
+					$("#richtig").html("<p>Alles gut</p>")
+				}
+
+		});
+		
+		*/
+		
+		
+		
+		elem = document.getElementById("submitButton")
+		elem.addEventListener('mouseover', onclick, false) // was bedeutet false/true?
+		
+		function onclick () {
+		console.log("Funktion onclick wurde aufgerufen")
+		document.getElementById("richtig").innerHTML = richtig.innerHTML + "<br> element wurde geklickt"
+		}
+		
+	//	elem.removeEventListener('click', onclick);
+		
+	/*	var regex = /e/g;
+		var text = "Regex ist super!"
+		var resultat = text.match(regex);
+
+			
+			for (i=0; i<=text.length; i++) {
+			if (!resultat) {
+				console.log(resultat)
+				console.log(text)
+				console.log(regex)
+				console.log(resultat[i])
+				console.log(text[i])
+				console.log(regex[i])
+				}
+			}
+			alert(resultat);
+*/
+        </script>    
+	</body>
+</html>

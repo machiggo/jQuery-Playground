@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Unbenanntes Dokument</title>
+         <script src="jquery-3.1.1.min.js"></script>
+		<style rel="text/css">
+			#kreis{width:150px;height:150px;border-radius:50%;background-color:green;}
+        </style>
+    </head>
+
+	<body>
+    
+    	<p id="text"> Die ist ein p-Tag</p>
+        <button id="toggle">Text toggeln</button>
+        <div id="kreis"></div>
+		<script type="text/javascript">
+        /*	var textAktiv = true;
+			$("#toggle").click (function() {
+					
+				if (textAktiv){
+					$("#text").fadeOut(4000, function() {
+						textAktiv = false;
+							});
+						
+				} else {
+					$("#text").fadeIn(3000, function() {
+						textAktiv = true;
+							});
+						}
+					});	
+			*/	
+			
+			$("#kreis").click(function (){
+				$(this).animate({
+					width: "550px",
+					height: "550px",
+					margin: "100px",
+				},2000, function() {
+					$(this).css("backgroundColor", "red");
+					});
+				});
+        </script>    
+	</body>
+</html>
+
